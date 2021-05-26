@@ -7,14 +7,15 @@ import { UserContext } from './UserContext';
 import Home from './Home';
 import About from './About';
 import { useState } from 'react';
+import UseReducerExample from './UseReducerExample';
 
 const App = () => {
   const [value, setValue] = useState('hello from react');
   return (
     <Router>
       <div>
-        <nav>
-          <ul>
+        {/* <nav> */}
+        {/* <ul>
             <li>
               <Link to='/'>Home</Link>
             </li>
@@ -22,11 +23,12 @@ const App = () => {
               <Link to='/about'>About</Link>
             </li>
           </ul>
-        </nav>
-        <UserContext.Provider value={{ value, setValue }}>
+        </nav> */}
+        {/* <UserContext.Provider value={{ value, setValue }}>
           <Route path='/' exact component={Home} />
           <Route path='/about' component={About} />
-        </UserContext.Provider>
+        </UserContext.Provider> */}
+        <UseReducerExample />
       </div>
     </Router>
   );
